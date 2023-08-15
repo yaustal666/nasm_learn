@@ -1,4 +1,4 @@
-; THe same printing program but using function
+; The same printing program but using function
 ;
 ;---------------------------------------------
 

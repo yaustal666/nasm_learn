@@ -5,7 +5,7 @@
 section .data
 
 msg:
-	db	"Hello, World", 10
+	db	"Hello, NASM)", 10
 
 section	.text
 

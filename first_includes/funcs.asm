@@ -37,6 +37,23 @@ printstr:
 	ret
 
 ;------------------------------------------------------
+;	void printLF(string msg)
+;	print upgraded with linefeed, so we do not need to add
+;	linefeed to every string we want to print
+printLF:
+	call		printstr
+
+	push		rsi
+	mov		rsi,		10
+	push		rsi
+	mov		rsi,		rsp
+	call		printstr
+
+	pop		rsi
+	pop		rsi
+	ret
+
+;------------------------------------------------------
 ;	void exit()
 ;	finish the program
 exit:
